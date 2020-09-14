@@ -41,7 +41,7 @@ namespace DnDHelperBot
 
         private async Task Client_Ready()
         {
-            await Client.SetGameAsync("r!help for more info.", null, ActivityType.Playing);
+            await Client.SetGameAsync("dnd!help for more info.", null, ActivityType.Playing);
         }
     }
 }

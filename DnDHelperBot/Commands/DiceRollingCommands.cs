@@ -25,7 +25,7 @@ namespace DnDHelperBot.Commands
             }
         }
 
-        private List<int> CalculateDiceToRole(string input)
+        private static List<int> CalculateDiceToRole(string input)
         {
             var dice = input.Split('d');
 
