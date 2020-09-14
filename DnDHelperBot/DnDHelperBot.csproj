@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SpellData\AllSpells.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SpellData\AllSpells.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DiscordNetHelperLibrary\DiscordNetHelperLibrary\DiscordNetHelperLibrary.csproj" />
+    <ProjectReference Include="..\..\synergize\VTFileSystemManagement\VTFileSystemManagement\VTFileSystemManagement.csproj" />
+  </ItemGroup>
+
+</Project>
