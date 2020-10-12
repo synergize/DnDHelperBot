@@ -15,6 +15,7 @@ namespace DnDHelperBot
         private async Task DnDMainAsync()
         {
             await MainAsync(Token);
+            await Commands.AddModulesAsync(typeof(Program).Assembly, null);
             Client.MessageReceived += Client_MessageReceived;
             Client.Ready += Client_Ready;
             await Task.Delay(-1);
